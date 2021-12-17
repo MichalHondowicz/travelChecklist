@@ -2,26 +2,23 @@ package com.michon.travelchecklist.checklist;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-//@Entity
+@Entity
 @Data
+@Table(name = "checklist_items")
 public class ChecklistItem {
 
-    private Long id;
-    private String name;
-    private Integer quantity;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
+    @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long getId() {
-        return id;
-    }
+    private Long id;
+
+    @Column(name = "name")
+    private String name;
+    @Column(name = "quantity")
+    private Integer quantity;
+
+    @ManyToOne
+    private Checklist checklist;
 }
