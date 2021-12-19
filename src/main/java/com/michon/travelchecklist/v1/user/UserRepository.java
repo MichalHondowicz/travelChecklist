@@ -1,9 +1,12 @@
-package com.michon.travelchecklist.user;
+package com.michon.travelchecklist.v1.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TravellerRepository extends JpaRepository<Traveller, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
+
+
+
 
 }

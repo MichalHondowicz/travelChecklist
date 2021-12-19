@@ -1,4 +1,4 @@
-package com.michon.travelchecklist.checklist;
+package com.michon.travelchecklist.v1.checklist;
 
 import lombok.Data;
 
