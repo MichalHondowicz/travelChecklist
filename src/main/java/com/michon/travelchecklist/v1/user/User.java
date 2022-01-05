@@ -2,12 +2,16 @@ package com.michon.travelchecklist.v1.user;
 
 import com.michon.travelchecklist.v1.checklist.Checklist;
 import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "users")
 public class User {
 

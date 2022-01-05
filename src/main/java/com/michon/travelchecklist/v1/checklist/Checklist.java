@@ -1,12 +1,14 @@
 package com.michon.travelchecklist.v1.checklist;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "checklists")
 public class Checklist {
 
